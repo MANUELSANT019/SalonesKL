@@ -1,0 +1,67 @@
+body {
+    background: #1A1A40;
+    color: whitesmoke;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: #483D8B;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.navbar a:hover {
+    color: #B19CD9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: #B19CD9;
+    padding: 10px;
+    margin-bottom: 6px;
+}
+
+form input, form textarea, form select {
+    background: wheat;
+    color: black; /* Cambia esto a whitesmoke si quieres que el texto sea blanco */
+    border: 1px solid #483D8B;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #483D8B;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #B19CD9;
+}
