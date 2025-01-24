@@ -8,7 +8,7 @@ from .forms import CreateNewTask, CreateNewProject
 
 
 def index(request):
-    title = 'Welcome DjangoCourse!!'
+    title = 'Bienvenido a la pagina de gestión de salas!!'
     return render(request, 'index.html', {'title': title})
 
 
