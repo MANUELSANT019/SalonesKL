@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h1>Tareas</h1>
+<!--Ciclo para interactuar con variables en html-->
+{% for task in tasks %}
+<div>
+    <h2>{{task.title}}</h2>
+    {# Comentario con JINJA el cual no se ve en el navegador #}
+    <!--Condicional que maneja el estado-->
+    <h1>{% if task.done == False %} 🕒 {% else %}  ✅ {% endif %} {{task.title}} </h1>
+    
+    <p>{{task.description}}</p>
+    <p>Project: {{task.project.name}}</p>
+    <button>
+        𐄂 Delete
+    </button>
+    <button>
+        ✅ Done
+    </button>
+</div>
+{% endfor %}
+{% endblock %}
